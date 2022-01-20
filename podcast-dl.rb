@@ -5,20 +5,20 @@
 class PodcastDl < Formula
   desc "Download videos from RSS video podcasts"
   homepage "https://github.com/elwin/podcast-tl"
-  version "1.0.1"
+  version "1.0.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/elwin/podcast-dl/releases/download/1.0.1/podcast-dl_1.0.1_Darwin_arm64.tar.gz"
-      sha256 "2e14d0f9a1abaa67f2aa792a61d715463105e7b8bc51541049270a147c3ba97d"
+      url "https://github.com/elwin/podcast-dl/releases/download/1.0.0/podcast-dl_1.0.0_Darwin_arm64.tar.gz"
+      sha256 "878531703b0e4ecd94cb606e80e6a88ee95b6182fb0eb51e0c7cbdb40d8b9a78"
 
       def install
         bin.install "podcast-dl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elwin/podcast-dl/releases/download/1.0.1/podcast-dl_1.0.1_Darwin_x86_64.tar.gz"
-      sha256 "433c82de05f5b39a1487f569edcdb26c2e75b0fe4bbb4c960d04b3f5c8b64e92"
+      url "https://github.com/elwin/podcast-dl/releases/download/1.0.0/podcast-dl_1.0.0_Darwin_x86_64.tar.gz"
+      sha256 "08f8c825242f26ced7ae9f13dd1fee1b55a0bf2172572dd0d203d24e2fdbd58a"
 
       def install
         bin.install "podcast-dl"
@@ -28,16 +28,16 @@ class PodcastDl < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elwin/podcast-dl/releases/download/1.0.1/podcast-dl_1.0.1_Linux_arm64.tar.gz"
-      sha256 "b9f3ef2f2e574f705ac6e1a2af64e0f7ab36cc602283c4ba2f00c870f1693023"
+      url "https://github.com/elwin/podcast-dl/releases/download/1.0.0/podcast-dl_1.0.0_Linux_arm64.tar.gz"
+      sha256 "2d27bd6e4195da957487dbacdfd3fb078141d1ebb65bb5d76010997a5d263be0"
 
       def install
         bin.install "podcast-dl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elwin/podcast-dl/releases/download/1.0.1/podcast-dl_1.0.1_Linux_x86_64.tar.gz"
-      sha256 "427f5a2434138e4e26f1173bfc3d5c444bb766c6c445ee3ecc64987d77711d0c"
+      url "https://github.com/elwin/podcast-dl/releases/download/1.0.0/podcast-dl_1.0.0_Linux_x86_64.tar.gz"
+      sha256 "d8697bf96940ba7dc28e429db2b609d4472b6e14248f607ce5b2c5f05c55d764"
 
       def install
         bin.install "podcast-dl"
