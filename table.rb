@@ -5,20 +5,20 @@
 class Table < Formula
   desc "Print CSV and JSON documents in a table format."
   homepage "https://github.com/elwin/table"
-  version "1.0.3"
+  version "1.0.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/elwin/table/releases/download/v1.0.3/table_1.0.3_Darwin_arm64.tar.gz"
-      sha256 "f9237107833b74cb7fc59b266cbb7932d5929f5a279ac3dba286b982d7d61ac6"
+      url "https://github.com/elwin/table/releases/download/v1.0.4/table_1.0.4_Darwin_arm64.tar.gz"
+      sha256 "e6d69196b3b961747a23aebc6a8eca71beeb232e34746d69aea4941a3fb3c024"
 
       def install
         bin.install "table"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elwin/table/releases/download/v1.0.3/table_1.0.3_Darwin_x86_64.tar.gz"
-      sha256 "987e13a55e6c178ad8a815d8f8a2c596578ff76a2e251afdaae4af71ebb30e16"
+      url "https://github.com/elwin/table/releases/download/v1.0.4/table_1.0.4_Darwin_x86_64.tar.gz"
+      sha256 "600a130f30d051572d4217864f2c596f7b72dac9ed6c23b49d04d2df15e4b5c8"
 
       def install
         bin.install "table"
@@ -28,16 +28,16 @@ class Table < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elwin/table/releases/download/v1.0.3/table_1.0.3_Linux_arm64.tar.gz"
-      sha256 "7e40080c42a16c9d18b6fbefb2e262e0d63cf9006d4e03ac24a108254b36f5b2"
+      url "https://github.com/elwin/table/releases/download/v1.0.4/table_1.0.4_Linux_arm64.tar.gz"
+      sha256 "a8854cab97770e56ba6b85d8a2a1c0dbd7fbd6437447f8999524b58ac50d1913"
 
       def install
         bin.install "table"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elwin/table/releases/download/v1.0.3/table_1.0.3_Linux_x86_64.tar.gz"
-      sha256 "ff4a5e237fdc0b8d696d008218dc6c27c569d458fc6e2e5153f265640923162d"
+      url "https://github.com/elwin/table/releases/download/v1.0.4/table_1.0.4_Linux_x86_64.tar.gz"
+      sha256 "febff27086f6d68666c110ca87c893fda801134f89aca2fd5377c5d1ba6c8595"
 
       def install
         bin.install "table"
