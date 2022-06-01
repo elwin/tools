@@ -5,20 +5,20 @@
 class Toggler < Formula
   desc "Tool to interact with Toggl (currently just rounding)"
   homepage "https://github.com/elwin/toggl"
-  version "0.0.3"
+  version "0.0.5"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/elwin/toggl/releases/download/v0.0.3/toggler_0.0.3_Darwin_arm64.tar.gz"
-      sha256 "f1d232d403c322b25b14744038649a6f8c410c752e3225de40c1b8bb82b0e46e"
+      url "https://github.com/elwin/toggl/releases/download/v0.0.5/toggler_0.0.5_Darwin_arm64.tar.gz"
+      sha256 "7959a2879d80a4275396cf91be2fd98fb89f51781b6d04aeab8b4c427b7e4947"
 
       def install
         bin.install "toggler"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elwin/toggl/releases/download/v0.0.3/toggler_0.0.3_Darwin_x86_64.tar.gz"
-      sha256 "04314d1c190585f830425d02aca22e607b5bd68972473f196a6e8ebf07d39445"
+      url "https://github.com/elwin/toggl/releases/download/v0.0.5/toggler_0.0.5_Darwin_x86_64.tar.gz"
+      sha256 "6df847a679a53afb18b654e81e3825220e7279e77cbd781cf8f2729ec5ee5acf"
 
       def install
         bin.install "toggler"
@@ -28,16 +28,16 @@ class Toggler < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elwin/toggl/releases/download/v0.0.3/toggler_0.0.3_Linux_arm64.tar.gz"
-      sha256 "47499a5c7e40fc435a0ca9d342c21b759a4376556731c2d04b080111eb28dddc"
+      url "https://github.com/elwin/toggl/releases/download/v0.0.5/toggler_0.0.5_Linux_arm64.tar.gz"
+      sha256 "5e738aff53308911a505140bf2cb7d86c092020a9723ffc39141092b7218d7ee"
 
       def install
         bin.install "toggler"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elwin/toggl/releases/download/v0.0.3/toggler_0.0.3_Linux_x86_64.tar.gz"
-      sha256 "d0854f4d02830ea8ca932935ace50697b3f37a2a990580833c661eafc8b0de4a"
+      url "https://github.com/elwin/toggl/releases/download/v0.0.5/toggler_0.0.5_Linux_x86_64.tar.gz"
+      sha256 "58ffc8da52ebdb732ef7c3647b5677b8d20cce1e67fc5c58e8b9da9328a58046"
 
       def install
         bin.install "toggler"
