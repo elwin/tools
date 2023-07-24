@@ -5,20 +5,20 @@
 class Franz < Formula
   desc "Your Swiss-Army Knife tool for interacting with Kafka."
   homepage "https://github.com/elwin/franz"
-  version "1.0.5"
+  version "1.0.6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/elwin/franz/releases/download/v1.0.5/franz_Darwin_arm64.tar.gz"
-      sha256 "9145eed6e0cdf12fbfcecc1960d948af4b1379f44c38b948041db4073399deca"
+      url "https://github.com/elwin/franz/releases/download/v1.0.6/franz_Darwin_arm64.tar.gz"
+      sha256 "046793aa5e5c681565d4a62d778f31d191d53e75a135752aaeb906904ea9fcd3"
 
       def install
         bin.install "franz"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elwin/franz/releases/download/v1.0.5/franz_Darwin_x86_64.tar.gz"
-      sha256 "cbfac1e79a81541d944b33817b13d558f1e3920989b9404ee3a1c79da85e3031"
+      url "https://github.com/elwin/franz/releases/download/v1.0.6/franz_Darwin_x86_64.tar.gz"
+      sha256 "3fe08f2a953620a3c2085058494c932d23d33ade486e4b321d31095361df2b16"
 
       def install
         bin.install "franz"
@@ -28,16 +28,16 @@ class Franz < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elwin/franz/releases/download/v1.0.5/franz_Linux_arm64.tar.gz"
-      sha256 "45334b692d65000089939e84c066ec9d16f5e81d91edec27d4b8bd5b6eaad8d2"
+      url "https://github.com/elwin/franz/releases/download/v1.0.6/franz_Linux_arm64.tar.gz"
+      sha256 "ed938bc79e4ed0c1cef357cee046b2bcb6d226d236f6cfcd87c4dd04da061f7d"
 
       def install
         bin.install "franz"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elwin/franz/releases/download/v1.0.5/franz_Linux_x86_64.tar.gz"
-      sha256 "6b541f539cf0a75787326f64a367b8fb9c8d822e948020991427dc4beb9ab673"
+      url "https://github.com/elwin/franz/releases/download/v1.0.6/franz_Linux_x86_64.tar.gz"
+      sha256 "979d8dd7200fc3adba1aa561307319b7fae88c738f264cc9b18d129b4624a31c"
 
       def install
         bin.install "franz"
