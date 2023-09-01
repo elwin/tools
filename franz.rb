@@ -5,20 +5,20 @@
 class Franz < Formula
   desc "Your Swiss-Army Knife tool for interacting with Kafka."
   homepage "https://github.com/elwin/franz"
-  version "1.0.10"
+  version "1.0.11"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/elwin/franz/releases/download/v1.0.10/franz_Darwin_arm64.tar.gz"
-      sha256 "43cc0deb44a82cf56af36965f52a83aff28afa75d31e74b9d4df3c91e52a1304"
+      url "https://github.com/elwin/franz/releases/download/v1.0.11/franz_Darwin_arm64.tar.gz"
+      sha256 "54dd6a102b7bbf39845294d321083e8e2fd7b4190b27e45291be221bb3b22b39"
 
       def install
         bin.install "franz"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elwin/franz/releases/download/v1.0.10/franz_Darwin_x86_64.tar.gz"
-      sha256 "f2c7bcdfc5ba885712090532aa0090af6617760ba597162d30cadf2b0f71a1ae"
+      url "https://github.com/elwin/franz/releases/download/v1.0.11/franz_Darwin_x86_64.tar.gz"
+      sha256 "5532504605f0543be00e7bfbd83dc6440b0b87851e33f59a7b4dec5307907e23"
 
       def install
         bin.install "franz"
@@ -28,16 +28,16 @@ class Franz < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elwin/franz/releases/download/v1.0.10/franz_Linux_arm64.tar.gz"
-      sha256 "5635ac1c5a2a19b4b6c69bc57f03faf2d3508b4ae9ee9f279e9067967c0c2273"
+      url "https://github.com/elwin/franz/releases/download/v1.0.11/franz_Linux_arm64.tar.gz"
+      sha256 "1b60f565a3b297b7dca92b9670b7e6fe4be80587bbf405a47e2711dd21cbe6ca"
 
       def install
         bin.install "franz"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elwin/franz/releases/download/v1.0.10/franz_Linux_x86_64.tar.gz"
-      sha256 "eeda4cb8b51ebec7dc9a339a9b2cc918044ba6485dd00430d29920204a65b105"
+      url "https://github.com/elwin/franz/releases/download/v1.0.11/franz_Linux_x86_64.tar.gz"
+      sha256 "f5f3f88659cc892ff30577491c5b776efa0543e0037e6fc6a16363410700006f"
 
       def install
         bin.install "franz"
