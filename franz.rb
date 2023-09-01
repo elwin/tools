@@ -5,20 +5,20 @@
 class Franz < Formula
   desc "Your Swiss-Army Knife tool for interacting with Kafka."
   homepage "https://github.com/elwin/franz"
-  version "1.0.14"
+  version "1.1.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/elwin/franz/releases/download/v1.0.14/franz_Darwin_arm64.tar.gz"
-      sha256 "3b5d2374b5ea79a2518d50ba5aa143097141e1a709153206a753a0673b036b10"
+      url "https://github.com/elwin/franz/releases/download/v1.1.0/franz_Darwin_arm64.tar.gz"
+      sha256 "9eb2ead3735628738814bcb9ebaea14a82c897d0f5d724206dd4bdd5b9966ef2"
 
       def install
         bin.install "franz"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elwin/franz/releases/download/v1.0.14/franz_Darwin_x86_64.tar.gz"
-      sha256 "ffdd451f6651098b4e58863843bf34ac6ea351f910b645c1dcffedd02e3262b0"
+      url "https://github.com/elwin/franz/releases/download/v1.1.0/franz_Darwin_x86_64.tar.gz"
+      sha256 "85756017a387d3b58f5114e89bca275b3257c619e69b651ed7c46b6f2e7f8547"
 
       def install
         bin.install "franz"
@@ -28,16 +28,16 @@ class Franz < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elwin/franz/releases/download/v1.0.14/franz_Linux_arm64.tar.gz"
-      sha256 "7a64cc112d4c9ac5fdbf27d88c0f048916bd60a5647bc8207590f0e05cf796dc"
+      url "https://github.com/elwin/franz/releases/download/v1.1.0/franz_Linux_arm64.tar.gz"
+      sha256 "ca9e4bbc16c7220415c7e56d714cfd2e8cd2b778b7a982ce802f8ee7652beae0"
 
       def install
         bin.install "franz"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elwin/franz/releases/download/v1.0.14/franz_Linux_x86_64.tar.gz"
-      sha256 "f8865c7bc940d5746d35e9ef75ddaad0a885257c7e424eb5d1289b196946a3f1"
+      url "https://github.com/elwin/franz/releases/download/v1.1.0/franz_Linux_x86_64.tar.gz"
+      sha256 "68f26b3560a3ab93f443f306b4f1fc0ca3e5684cf031d2991b9a2f6393e3cc8c"
 
       def install
         bin.install "franz"
