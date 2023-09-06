@@ -5,20 +5,20 @@
 class Franz < Formula
   desc "Your Swiss-Army Knife tool for interacting with Kafka."
   homepage "https://github.com/elwin/franz"
-  version "2.1.0"
+  version "2.2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/elwin/franz/releases/download/v2.1.0/franz_Darwin_arm64.tar.gz"
-      sha256 "04f88cc0d8a84244fd694159599d6e578b5ca3765692ee079de86ebc36b440a4"
+      url "https://github.com/elwin/franz/releases/download/2.2.0/franz_Darwin_arm64.tar.gz"
+      sha256 "6192e236dd4cb290df1d469dc8852ba74c15f793fc5968e5da3958646e45ad37"
 
       def install
         bin.install "franz"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elwin/franz/releases/download/v2.1.0/franz_Darwin_x86_64.tar.gz"
-      sha256 "a00486195eca87b58692052f5a28389f6ba352614ba5cde4bb8b606d38c7f968"
+      url "https://github.com/elwin/franz/releases/download/2.2.0/franz_Darwin_x86_64.tar.gz"
+      sha256 "1eccc47fafba1be2e6911cb571577f187e82f71df47fd5c5341435ddbc2eaf9b"
 
       def install
         bin.install "franz"
@@ -28,16 +28,16 @@ class Franz < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elwin/franz/releases/download/v2.1.0/franz_Linux_arm64.tar.gz"
-      sha256 "44f7f764cc044191b0efe31c1f1036c80741811109f4755d3fe4a49852967c68"
+      url "https://github.com/elwin/franz/releases/download/2.2.0/franz_Linux_arm64.tar.gz"
+      sha256 "6d8d199af5ddc2573d6b9407b6ea46a3e170faa650a6ee471f5e6a042d654d1f"
 
       def install
         bin.install "franz"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elwin/franz/releases/download/v2.1.0/franz_Linux_x86_64.tar.gz"
-      sha256 "3cb3d9e0960468bad9e6e6476e2be9753c829856db99c54fcab68517ff2d4be2"
+      url "https://github.com/elwin/franz/releases/download/2.2.0/franz_Linux_x86_64.tar.gz"
+      sha256 "31c68bbe3b856202a51741111ab2c6a9a03d4a80eb3f313c1cd39d790a704c9a"
 
       def install
         bin.install "franz"
