@@ -5,20 +5,20 @@
 class Toggler < Formula
   desc "Tool to interact with Toggl (currently just rounding)"
   homepage "https://github.com/elwin/toggl"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/elwin/toggl/releases/download/v0.0.7/toggler_Darwin_arm64.tar.gz"
-      sha256 "b4b6b5d94c725654b6b2ac92cd5b98cacefc9bd78f320251e89e7880ad62af23"
+      url "https://github.com/elwin/toggl/releases/download/v0.0.8/toggler_Darwin_arm64.tar.gz"
+      sha256 "eb113f631a8bfd96ac8c3b29f0a4c02d742141ef02bfc11f568276efc8f9c685"
 
       def install
         bin.install "toggler"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elwin/toggl/releases/download/v0.0.7/toggler_Darwin_x86_64.tar.gz"
-      sha256 "7c0f6efd3cd440416871a439704982495d7684486716b70a8273808f2e3ff140"
+      url "https://github.com/elwin/toggl/releases/download/v0.0.8/toggler_Darwin_x86_64.tar.gz"
+      sha256 "6337bf12e27aaef8a5e2da26772b2d7c5f9f9a619da7fc585d4c4cde0b0e2117"
 
       def install
         bin.install "toggler"
@@ -28,16 +28,16 @@ class Toggler < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elwin/toggl/releases/download/v0.0.7/toggler_Linux_arm64.tar.gz"
-      sha256 "c1713b55e9616e15672693e7d9cfbea750dfafdd5344b75001f44d239d5224f9"
+      url "https://github.com/elwin/toggl/releases/download/v0.0.8/toggler_Linux_arm64.tar.gz"
+      sha256 "25430e479e3a4f07280f7ab016ec1235eac875ca453eef0cb0f092fe30921811"
 
       def install
         bin.install "toggler"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elwin/toggl/releases/download/v0.0.7/toggler_Linux_x86_64.tar.gz"
-      sha256 "a201eeb9cf009bb48fea99d1b1b3eab309783fdb7dc4b8e48a2414ce751d920e"
+      url "https://github.com/elwin/toggl/releases/download/v0.0.8/toggler_Linux_x86_64.tar.gz"
+      sha256 "b956a475027ba6412af46e0ac01502ee0c3dba920d1c9df56c5f30b71e9bec33"
 
       def install
         bin.install "toggler"
